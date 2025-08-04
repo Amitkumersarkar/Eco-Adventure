@@ -8,6 +8,8 @@ import {
 import Root from './Layouts/Root';
 import Home from './Components/Pages/Home';
 import AdventureCard from './Components/Pages/AdventureCard';
+import Login from './Components/Pages/Login';
+import Register from './Components/Pages/Register';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -20,7 +22,15 @@ const router = createBrowserRouter([
       {
         path: '/adventure',
         element: <AdventureCard></AdventureCard>
-      } 
+      },
+      {
+        path: '/login',
+        element: <Login></Login>
+      },
+      {
+        path: '/register',
+        element: <Register></Register>
+      }
     ]
   },
 ]);

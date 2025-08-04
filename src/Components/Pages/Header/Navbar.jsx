@@ -1,9 +1,10 @@
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
     return (
         <div className="navbar bg-base-100 shadow-sm">
             <div className="flex-1">
-                <a className="btn btn-ghost text-xl">daisyUI</a>
+                <a className="btn btn-ghost text-xl">Eco-Adventure</a>
             </div>
             <div className="flex gap-2">
                 <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
@@ -24,8 +25,12 @@ const Navbar = () => {
                                 <span className="badge">New</span>
                             </a>
                         </li>
-                        <li><a>Settings</a></li>
-                        <li><a>Logout</a></li>
+                        <li>
+                            <NavLink to="register">Register</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='login'>Login</NavLink>
+                        </li>
                     </ul>
                 </div>
             </div>
