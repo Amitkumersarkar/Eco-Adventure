@@ -31,9 +31,9 @@ const Login = () => {
                                     <a className="link link-hover text-sm">Forgot password?</a>
                                 </div>
                                 <button className="btn btn-ghost text-white text-xl font-semibold bg-cyan-700 w-full">Login</button>
-                                <p className="text-center font-semibold">
-                                    Don't Have An Account ? <span className="text-green-700 font-bold"><Link to='register'>SignUp</Link></span> First
-                                </p>
+                                {/* <p className="text-center font-semibold">
+                                    Don't Have An Account ? <span className="text-green-700 font-bold"><Link to='/register'>Register</Link></span>
+                                </p> */}
                             </fieldset>
                         </div>
                     </form>
