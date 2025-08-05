@@ -8,8 +8,9 @@ import {
 import Root from './Layouts/Root';
 import Home from './Components/Pages/Home';
 import AdventureCard from './Components/Pages/AdventureCard';
-import Login from './Components/Pages/Login';
-import Register from './Components/Pages/Register';
+import LoginProfile from './Components/Pages/LoginProfile';
+import UserRegister from './Components/Pages/UserRegister';
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -25,11 +26,11 @@ const router = createBrowserRouter([
       },
       {
         path: '/login',
-        element: <Login></Login>
+        element: <LoginProfile></LoginProfile>
       },
       {
         path: '/register',
-        element: <Register></Register>
+        element: <UserRegister></UserRegister>
       }
     ]
   },
