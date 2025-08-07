@@ -20,7 +20,7 @@ const UserRegister = () => {
                             <input type="password" className="input" placeholder="Password" />
                             <div><a className="link link-hover">Forgot password?</a></div>
                             <button className="btn btn-neutral mt-4">Login</button>
-                            <p className="text-center font-semibold">All ready have an accounts ! <NavLink to="/login"><span className="font-bold text-cyan-600">LogIn</span></NavLink></p>
+                            <p className="text-center font-semibold mt-4">All ready have an accounts ! <NavLink to="/login"><span className="font-bold text-cyan-600">LogIn</span></NavLink></p>
                         </fieldset>
                     </div>
                 </div>

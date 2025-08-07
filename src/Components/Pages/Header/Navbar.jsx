@@ -2,11 +2,19 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <div className="navbar bg-base-100 shadow-sm">
-            <div className="flex-1">
+        <div className="flex justify-between navbar bg-base-100 shadow-sm">
+            <div>
                 <NavLink to='/'>
-                   <p className="text-2xl font-bold btn btn-ghost"> Eco-Adventure</p>
+                    <p className="text-2xl font-bold btn btn-ghost"> Eco-Adventure</p>
                 </NavLink>
+            </div>
+            <div >
+                <ul className="flex gap-5">
+                    <li className="link link-hover"><NavLink>Home</NavLink></li>
+                    <li className="link link-hover"><NavLink>Explore</NavLink></li>
+                    <li className="link link-hover"><NavLink>Blogs</NavLink></li>
+                    <li className="link link-hover"><NavLink>FeedBack</NavLink></li>
+                </ul>
             </div>
             <div className="flex gap-2">
                 <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />

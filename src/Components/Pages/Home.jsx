@@ -1,5 +1,10 @@
+import { useLoaderData } from "react-router-dom";
+import AdventureCard from "./AdventureCard";
 
 const Home = () => {
+    const cardData = useLoaderData();
+    const { cardInfo } = cardData;
+    console.log(cardInfo);
     return (
         <div className="carousel w-full">
             <div id="slide1" className="carousel-item relative w-full">
@@ -37,6 +42,11 @@ const Home = () => {
                     <a href="#slide3" className="btn btn-circle">❮</a>
                     <a href="#slide1" className="btn btn-circle">❯</a>
                 </div>
+            </div>
+            <div>
+                {
+                    cardInfo.map(data => <AdventureCard key={data.id} data={data}></AdventureCard>)
+                }
             </div>
         </div>
     );

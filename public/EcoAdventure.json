@@ -1,0 +1,87 @@
+[
+    {
+        "id": 1,
+        "title": "Himalayan Mountain Trek",
+        "image": "https://example.com/images/himalaya.jpg",
+        "category": "Mountain Treks",
+        "shortDescription": "An unforgettable journey through the snow-covered peaks of the Himalayas.",
+        "cost": "$799",
+        "bookingAvailability": true,
+        "location": "Nepal",
+        "duration": "7 Days",
+        "adventureLevel": "Hard",
+        "includedItems": [
+            "Trekking Guide",
+            "Camping Gear",
+            "Meals",
+            "Transport"
+        ],
+        "ecoFriendlyFeatures": [
+            "Leave No Trace Policy",
+            "Biodegradable Waste Disposal",
+            "Local Guide Employment"
+        ],
+        "maxGroupSize": 10,
+        "specialInstructions": [
+            "Carry reusable water bottles",
+            "Pack lightweight clothes",
+            "Acclimatize for altitude"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Coral Reef Ocean Dive",
+        "image": "https://example.com/images/oceandive.jpg",
+        "category": "Ocean Dives",
+        "shortDescription": "Explore vibrant coral reefs and marine life in crystal-clear waters.",
+        "cost": "$599",
+        "bookingAvailability": true,
+        "location": "Maldives",
+        "duration": "3 Days",
+        "adventureLevel": "Medium",
+        "includedItems": [
+            "Diving Equipment",
+            "Safety Briefing",
+            "Underwater Guide"
+        ],
+        "ecoFriendlyFeatures": [
+            "No-Touch Diving Policy",
+            "Reef-Safe Sunscreen",
+            "Plastic-Free Zones"
+        ],
+        "maxGroupSize": 6,
+        "specialInstructions": [
+            "Bring swimwear",
+            "No touching corals",
+            "Follow instructor guidance"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Amazon Forest Expedition",
+        "image": "https://example.com/images/amazon.jpg",
+        "category": "Forest Expeditions",
+        "shortDescription": "Immerse yourself in the diverse wildlife and ecosystems of the Amazon rainforest.",
+        "cost": "$999",
+        "bookingAvailability": false,
+        "location": "Brazil",
+        "duration": "5 Days",
+        "adventureLevel": "Medium",
+        "includedItems": [
+            "Jungle Guide",
+            "Hammock Accommodation",
+            "Survival Kit"
+        ],
+        "ecoFriendlyFeatures": [
+            "Solar Energy Use",
+            "Eco-Lodges",
+            "Rainwater Harvesting"
+        ],
+        "maxGroupSize": 8,
+        "specialInstructions": [
+            "Wear insect repellent",
+            "Pack waterproof gear",
+            "Avoid loud noise"
+        ]
+    }
+]
