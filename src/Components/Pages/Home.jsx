@@ -74,45 +74,46 @@ const Home = () => {
                 <div className="card bg-base-100 w-96 shadow-sm">
                     <figure className="px-10 pt-10">
                         <img
-                            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            src="https://i.ibb.co.com/rGjfqPNT/deer-2009290.png"
                             alt="Shoes"
                             className="rounded-xl" />
                     </figure>
                     <div className="card-body items-center text-center">
-                        <h2 className="card-title">Card Title</h2>
-                        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                        <h2 className="card-title">WildLife Tour</h2>
+                        <p>Experience the majesty of the wilderness without compromising on comfort and style. Our exclusive wildlife tours offer a sophisticated and intimate way to connect with nature. Stay in hand-picked luxury lodges and tented camps, where five-star service meets breathtaking views of the wild.</p>
                         <div className="card-actions">
-                            <button className="btn btn-primary">Buy Now</button>
+                            <button className="btn btn-primary">CheckOut Now</button>
                         </div>
                     </div>
                 </div>
                 <div className="card bg-base-100 w-96 shadow-sm">
                     <figure className="px-10 pt-10">
                         <img
-                            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            src="https://i.ibb.co.com/WhtkGPZ/indonesia-14055411.png"
                             alt="Shoes"
                             className="rounded-xl" />
                     </figure>
                     <div className="card-body items-center text-center">
-                        <h2 className="card-title">Card Title</h2>
-                        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                        <h2 className="card-title">Museum Tour</h2>
+                        <p>Get ready for a unique tour that perfectly blends cultural immersion with heart-pounding adventure. Our exclusive Museum and Adventure Tour is designed for those who want to do more than just see the sights—they want to live them. We’ll take you from the hallowed halls of Dhaka National Museum to the exhilarating landscapes that shaped our history.</p>
                         <div className="card-actions">
-                            <button className="btn btn-primary">Buy Now</button>
+                            <button className="btn btn-primary">CheckOut Now</button>
                         </div>
                     </div>
                 </div>
                 <div className="card bg-base-100 w-96 shadow-sm">
                     <figure className="px-10 pt-10">
                         <img
-                            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            src="https://i.ibb.co.com/MDHMxxs1/hiking-901850.png"
                             alt="Shoes"
                             className="rounded-xl" />
                     </figure>
                     <div className="card-body items-center text-center">
-                        <h2 className="card-title">Card Title</h2>
-                        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                        <h2 className="card-title">Adventure Tour</h2>
+                        <p>
+                            Your adventure begins with a deep dive into the past. Our expert historians will guide you through the priceless artifacts and captivating stories of [Era or historical topic, e.g., the Roman Empire, ancient Egypt, indigenous cultures]. You'll gain a profound understanding of the people and events that built this region.</p>
                         <div className="card-actions">
-                            <button className="btn btn-primary">Buy Now</button>
+                            <button className="btn btn-primary">CheckOut Now</button>
                         </div>
                     </div>
                 </div>
