@@ -1,6 +1,5 @@
 import { useLoaderData } from "react-router-dom";
 import AdventureCard from "./AdventureCard";
-
 const Home = () => {
     const cardData = useLoaderData();
     console.log(cardData);
@@ -52,12 +51,71 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <h1 className="font-bold text-4xl mb-5 pb-2 border-accent animate-pulse text-center">Let's travel and explore the world</h1>
+            <h1 className="font-bold text-4xl mb-5 pb-2 border-accent animate-pulse text-center">Let's travel and explore the world !</h1>
             {/* Cards below */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 overflow-auto w-10/12 mx-auto">
                 {cardData.map((cardInfo) => (
                     <AdventureCard key={cardInfo.id} cardInfo={cardInfo} />
                 ))}
+            </div>
+            <div className="flex justify-between items-center">
+                <div className="">
+                    <div className="text-2xl font-bold mt-5 pb-3 ">
+                        <h1>Choose Tour Types</h1>
+                    </div>
+                    <p className="text-gray-400">Live love and explore around the world</p>
+                </div>
+                <div>
+                    <button className="btn btn-primary">View All</button>
+                </div>
+            </div>
+            {/* card section */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 overflow-auto">
+                <div className="card bg-base-100 w-96 shadow-sm">
+                    <figure className="px-10 pt-10">
+                        <img
+                            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes"
+                            className="rounded-xl" />
+                    </figure>
+                    <div className="card-body items-center text-center">
+                        <h2 className="card-title">Card Title</h2>
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                        <div className="card-actions">
+                            <button className="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div className="card bg-base-100 w-96 shadow-sm">
+                    <figure className="px-10 pt-10">
+                        <img
+                            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes"
+                            className="rounded-xl" />
+                    </figure>
+                    <div className="card-body items-center text-center">
+                        <h2 className="card-title">Card Title</h2>
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                        <div className="card-actions">
+                            <button className="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div className="card bg-base-100 w-96 shadow-sm">
+                    <figure className="px-10 pt-10">
+                        <img
+                            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes"
+                            className="rounded-xl" />
+                    </figure>
+                    <div className="card-body items-center text-center">
+                        <h2 className="card-title">Card Title</h2>
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                        <div className="card-actions">
+                            <button className="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );
