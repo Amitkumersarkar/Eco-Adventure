@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <div className="flex justify-between navbar bg-cyan-600 rounded-xl shadow-sm">
+        <div className="flex justify-between navbar bg-cyan-600 rounded-xl shadow-sm text-white">
             <div className="flex justify-between items-center w-[200px] gap-2">
                 <div>
                     <img src="https://i.ibb.co.com/v6n37YHX/travelling-2746298.png" alt="" />
