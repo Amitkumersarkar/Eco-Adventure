@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "title": "Wildlife Safari in Sundarbans",
+        "category": "Wildlife Tour",
+        "adventureLevel": "Moderate",
+        "duration": "3 Days",
+        "cost": 250,
+        "location": "Sundarbans, Bangladesh",
+        "image": "https://images.unsplash.com/photo-1586769852836-bc069f19e1dd",
+        "description": "Explore the world's largest mangrove forest and see the majestic Royal Bengal Tiger along with exotic birds and crocodiles."
+    },
+    {
+        "id": 2,
+        "title": "Dhaka National Museum Visit",
+        "category": "Museum Tour",
+        "adventureLevel": "Easy",
+        "duration": "Half Day",
+        "cost": 10,
+        "location": "Dhaka, Bangladesh",
+        "image": "https://images.unsplash.com/photo-1593757145169-c27b7a59af14",
+        "description": "Discover ancient artifacts, historical paintings, and cultural treasures of Bangladesh at the National Museum."
+    },
+    {
+        "id": 3,
+        "title": "Trekking in Bandarban Hills",
+        "category": "Adventure Tour",
+        "adventureLevel": "High",
+        "duration": "5 Days",
+        "cost": 400,
+        "location": "Bandarban, Bangladesh",
+        "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+        "description": "Experience breathtaking views, remote tribal villages, and challenging trails through the scenic Bandarban mountains."
+    }
+]

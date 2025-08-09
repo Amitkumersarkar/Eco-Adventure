@@ -1,14 +1,15 @@
-import { useLoaderData } from "react-router-dom";
+import { NavLink, useLoaderData } from "react-router-dom";
 import AdventureCard from "./AdventureCard";
+import { ToastContainer, toast } from 'react-toastify';
+
 const Home = () => {
+    const notify = () => toast(" Thanks For Checking Out");
     const cardData = useLoaderData();
     console.log(cardData);
 
     return (
 
         <div>
-
-            {/* Carousel */}
             {/* Carousel */}
             <div className="carousel w-full overflow-auto mb-10 mt-10">
                 {[
@@ -52,16 +53,18 @@ const Home = () => {
                     <AdventureCard key={cardInfo.id} cardInfo={cardInfo} />
                 ))}
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-between items-center">
                 <div>
                     <div className="text-4xl font-bold mt-5 pb-3 text-center">
                         <h1>Choose Tour Types</h1>
                     </div>
-                    <p className="text-gray-400 text-center font-semibold">Live love and explore.</p>
+                    <p className="text-gray-400 font-semibold">Live love and explore.</p>
                 </div>
-                {/* <div>
-                    <button className="btn btn-primary">View All</button>
-                </div> */}
+                <div>
+                    <NavLink to='/explore'>
+                        <button className="btn btn-primary">Explore More</button>
+                    </NavLink>
+                </div>
             </div>
             {/* card section */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 overflow-auto">
@@ -76,7 +79,9 @@ const Home = () => {
                         <h2 className="card-title">WildLife Tour</h2>
                         <p>Experience the majesty of the wilderness without compromising on comfort and style. Our exclusive wildlife tours offer a sophisticated and intimate way to connect with nature. Stay in hand-picked luxury lodges and tented camps, where five-star service meets breathtaking views of the wild.</p>
                         <div className="card-actions">
-                            <button className="btn btn-primary">CheckOut Now</button>
+                            <NavLink to='/explore'>
+                                <button className="btn btn-primary">CheckOut Now</button>
+                            </NavLink>
                         </div>
                     </div>
                 </div>
@@ -91,7 +96,8 @@ const Home = () => {
                         <h2 className="card-title">Museum Tour</h2>
                         <p>Get ready for a unique tour that perfectly blends cultural immersion with heart-pounding adventure. Our exclusive Museum and Adventure Tour is designed for those who want to do more than just see the sights—they want to live them. We’ll take you from the hallowed halls of Dhaka National Museum to the exhilarating landscapes that shaped our history.</p>
                         <div className="card-actions">
-                            <button className="btn btn-primary">CheckOut Now</button>
+                            <button onClick={notify} className="btn btn-primary">CheckOut Now</button>
+                            <ToastContainer />
                         </div>
                     </div>
                 </div>
@@ -107,7 +113,9 @@ const Home = () => {
                         <p>
                             Your adventure begins with a deep dive into the past. Our expert historians will guide you through the priceless artifacts and captivating stories of [Era or historical topic, e.g., the Roman Empire, ancient Egypt, indigenous cultures]. You'll gain a profound understanding of the people and events that built this region.</p>
                         <div className="card-actions">
-                            <button className="btn btn-primary">CheckOut Now</button>
+                            <NavLink to='/checkoutNow'>
+                                <button className="btn btn-primary">CheckOut Now</button>
+                            </NavLink>
                         </div>
                     </div>
                 </div>

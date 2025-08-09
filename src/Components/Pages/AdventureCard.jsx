@@ -13,6 +13,7 @@ const AdventureCard = ({ cardInfo }) => {
         includedItems,
         specialInstructions,
         id
+
     } = cardInfo;
 
     return (
@@ -38,8 +39,8 @@ const AdventureCard = ({ cardInfo }) => {
                 <div className="text-left font-bold mt-2">
                     <span className="text-xs text-gray-500">📍 {location}</span>
                 </div>
-                <NavLink to={`/explore/${id}`}>
-                    <button className="btn btn-primary text-center">Explore More</button>
+                <NavLink to={`/details/${id}`}>
+                    <button className="btn btn-primary text-center">View Details</button>
                 </NavLink>
             </div>
         </div>

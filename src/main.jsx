@@ -14,6 +14,8 @@ import ExploreCard from './Components/Pages/ExploreCard';
 import Explore from './Components/Pages/Explore';
 import HotelService from './Components/Pages/HotelService';
 import HotelServiceCard from './Components/Pages/HotelServiceCard';
+import Details from './Components/Pages/Details';
+import CheckOutNow from './Components/Pages/CheckOutNow';
 
 const router = createBrowserRouter([
   {
@@ -38,9 +40,10 @@ const router = createBrowserRouter([
         element: <UserRegister></UserRegister>
       },
       {
-        path: '/explore/:id',
+        path: '/explore',
         element: <Explore></Explore>
-      },
+      }
+      ,
       {
         path: '/exploreCard',
         element: <ExploreCard></ExploreCard>
@@ -53,7 +56,33 @@ const router = createBrowserRouter([
       {
         path: '/hotelServiceCard',
         element: <HotelServiceCard></HotelServiceCard>
-      }
+      },
+      {
+        path: '/details',
+        element: <Details></Details>,
+        path: '/details/:id',
+        // showing single data using dynamic method
+        loader: async ({ params }) => {
+          const res = await fetch('/EcoAdventure.json')
+          const data = await res.json()
+          // console.log(data, params.id);
+          // loading single data by find operation
+          const singleData = data.find(d => d.id == params.id)
+          // console.log(singleData);
+          return singleData;
+        },
+      },
+      {
+        path: '/checkoutNow',
+        element: <CheckOutNow></CheckOutNow>,
+        loader: async ({ params }) => {
+          const response = await fetch('/tourData.json')
+          const data = await response.json()
+          const oneData = data.find(info => info.id == params.id)
+          return oneData;
+        }
+      },
+     
     ]
   },
 ]);
