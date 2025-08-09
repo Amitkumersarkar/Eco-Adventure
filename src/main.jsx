@@ -16,11 +16,13 @@ import HotelService from './Components/Pages/HotelService';
 import HotelServiceCard from './Components/Pages/HotelServiceCard';
 import Details from './Components/Pages/Details';
 import CheckOutNow from './Components/Pages/CheckOutNow';
+import ErrorPage from './Components/Pages/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: '/',
@@ -82,7 +84,7 @@ const router = createBrowserRouter([
           return oneData;
         }
       },
-     
+
     ]
   },
 ]);

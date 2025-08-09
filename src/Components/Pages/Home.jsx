@@ -80,7 +80,8 @@ const Home = () => {
                         <p>Experience the majesty of the wilderness without compromising on comfort and style. Our exclusive wildlife tours offer a sophisticated and intimate way to connect with nature. Stay in hand-picked luxury lodges and tented camps, where five-star service meets breathtaking views of the wild.</p>
                         <div className="card-actions">
                             <NavLink to='/explore'>
-                                <button className="btn btn-primary">CheckOut Now</button>
+                                <button onClick={notify} className="btn btn-primary">CheckOut Now</button>
+                                <ToastContainer />
                             </NavLink>
                         </div>
                     </div>
@@ -96,7 +97,9 @@ const Home = () => {
                         <h2 className="card-title">Museum Tour</h2>
                         <p>Get ready for a unique tour that perfectly blends cultural immersion with heart-pounding adventure. Our exclusive Museum and Adventure Tour is designed for those who want to do more than just see the sights—they want to live them. We’ll take you from the hallowed halls of Dhaka National Museum to the exhilarating landscapes that shaped our history.</p>
                         <div className="card-actions">
-                            <button onClick={notify} className="btn btn-primary">CheckOut Now</button>
+                            <NavLink to='/explore'>
+                                <button onClick={notify} className="btn btn-primary">CheckOut Now</button>
+                            </NavLink>
                             <ToastContainer />
                         </div>
                     </div>
@@ -113,8 +116,9 @@ const Home = () => {
                         <p>
                             Your adventure begins with a deep dive into the past. Our expert historians will guide you through the priceless artifacts and captivating stories of [Era or historical topic, e.g., the Roman Empire, ancient Egypt, indigenous cultures]. You'll gain a profound understanding of the people and events that built this region.</p>
                         <div className="card-actions">
-                            <NavLink to='/checkoutNow'>
-                                <button className="btn btn-primary">CheckOut Now</button>
+                            <NavLink to='/explore'>
+                                <button onClick={notify} className="btn btn-primary">CheckOut Now</button>
+                                <ToastContainer />
                             </NavLink>
                         </div>
                     </div>

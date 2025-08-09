@@ -16,8 +16,8 @@ const Navbar = () => {
                     <li className="link link-hover"><NavLink to='/'>Home</NavLink></li>
                     <li className="link link-hover"><NavLink to='/explore'>Explore</NavLink></li>
                     <li className="link link-hover"><NavLink to='/hotelService'>Hotel Service</NavLink></li>
-                    <li className="link link-hover"><NavLink to='/'>FeedBack</NavLink></li>
-                    <li className="link link-hover"><NavLink>Blogs</NavLink></li>
+                    <li className="link link-hover"><NavLink to='/error'>FeedBack</NavLink></li>
+                    <li className="link link-hover"><NavLink to='/error'>Blogs</NavLink></li>
                 </ul>
             </div>
             <div className="flex gap-2">
