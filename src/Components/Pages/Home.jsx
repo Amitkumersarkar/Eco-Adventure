@@ -7,7 +7,6 @@ const Home = () => {
     return (
 
         <div>
-
             {/* Carousel */}
             <div className="carousel w-full h-[400px] md:h-[500px] overflow-hidden mb-10 mt-10">
                 <div id="slide1" className="carousel-item relative w-full">
@@ -58,16 +57,16 @@ const Home = () => {
                     <AdventureCard key={cardInfo.id} cardInfo={cardInfo} />
                 ))}
             </div>
-            <div className="flex justify-between items-center">
-                <div className="">
-                    <div className="text-2xl font-bold mt-5 pb-3 ">
+            <div className="flex justify-center">
+                <div>
+                    <div className="text-4xl font-bold mt-5 pb-3 text-center">
                         <h1>Choose Tour Types</h1>
                     </div>
-                    <p className="text-gray-400">Live love and explore around the world</p>
+                    <p className="text-gray-400 text-center font-semibold">Live love and explore.</p>
                 </div>
-                <div>
+                {/* <div>
                     <button className="btn btn-primary">View All</button>
-                </div>
+                </div> */}
             </div>
             {/* card section */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 overflow-auto">
