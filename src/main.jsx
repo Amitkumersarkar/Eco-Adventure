@@ -10,6 +10,10 @@ import Home from './Components/Pages/Home';
 import AdventureCard from './Components/Pages/AdventureCard';
 import LoginProfile from './Components/Pages/LoginProfile';
 import UserRegister from './Components/Pages/UserRegister';
+import ExploreCard from './Components/Pages/ExploreCard';
+import Explore from './Components/Pages/Explore';
+import HotelService from './Components/Pages/HotelService';
+import HotelServiceCard from './Components/Pages/HotelServiceCard';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +36,23 @@ const router = createBrowserRouter([
       {
         path: '/register',
         element: <UserRegister></UserRegister>
+      },
+      {
+        path: '/explore',
+        element: <Explore></Explore>
+      },
+      {
+        path: '/exploreCard',
+        element: <ExploreCard></ExploreCard>
+      },
+      {
+        path: '/hotelService',
+        element: <HotelService></HotelService>,
+        loader: () => fetch("/service.json")
+      },
+      {
+        path: '/hotelServiceCard',
+        element: <HotelServiceCard></HotelServiceCard>
       }
     ]
   },

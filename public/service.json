@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "serviceName": "Room Cleaning",
+        "description": "Daily housekeeping service to keep your room spotless and comfortable.",
+        "available": true,
+        "price": 0,
+        "hours": "8 AM - 6 PM",
+        "additionalInfo": "Eco-friendly cleaning products used."
+    },
+    {
+        "id": 2,
+        "serviceName": "24/7 Room Service",
+        "description": "Order food, beverages, or amenities anytime, delivered to your room.",
+        "available": true,
+        "price": "Varies by item",
+        "hours": "24 hours",
+        "additionalInfo": "Includes special dietary options."
+    },
+    {
+        "id": 3,
+        "serviceName": "Spa & Wellness",
+        "description": "Relax with massages, facials, and wellness treatments.",
+        "available": true,
+        "price": 50,
+        "hours": "9 AM - 9 PM",
+        "additionalInfo": "Advance booking recommended."
+    },
+    {
+        "id": 4,
+        "serviceName": "Airport Shuttle",
+        "description": "Convenient pick-up and drop-off service to/from the airport.",
+        "available": false,
+        "price": 30,
+        "hours": "6 AM - 10 PM",
+        "additionalInfo": "Requires 24-hour prior booking."
+    },
+    {
+        "id": 5,
+        "serviceName": "Free Wi-Fi",
+        "description": "High-speed internet access throughout the hotel premises.",
+        "available": true,
+        "price": 0,
+        "hours": "24 hours",
+        "additionalInfo": "Complimentary for all guests."
+    },
+    {
+        "id": 6,
+        "serviceName": "Laundry Service",
+        "description": "Clothes washing, drying, and ironing with same-day service.",
+        "available": true,
+        "price": 15,
+        "hours": "7 AM - 8 PM",
+        "additionalInfo": "Express service available at extra cost."
+    },
+    {
+        "id": 7,
+        "serviceName": "Fitness Center",
+        "description": "Well-equipped gym with personal trainers available on request.",
+        "available": true,
+        "price": 0,
+        "hours": "5 AM - 11 PM",
+        "additionalInfo": "Access included with your stay."
+    },
+    {
+        "id": 8,
+        "serviceName": "Conference Room",
+        "description": "Spacious meeting rooms with projectors and Wi-Fi for business needs.",
+        "available": true,
+        "price": 100,
+        "hours": "8 AM - 8 PM",
+        "additionalInfo": "Catering services available."
+    }
+]

@@ -12,11 +12,12 @@ const Navbar = () => {
                 </NavLink>
             </div>
             <div >
-                <ul className="flex gap-5">
-                    <li className="link link-hover"><NavLink>Home</NavLink></li>
-                    <li className="link link-hover"><NavLink>Explore</NavLink></li>
+                <ul className="flex gap-5 font-semibold">
+                    <li className="link link-hover"><NavLink to='/'>Home</NavLink></li>
+                    <li className="link link-hover"><NavLink to='/explore'>Explore</NavLink></li>
+                    <li className="link link-hover"><NavLink to='/hotelService'>Hotel Service</NavLink></li>
+                    <li className="link link-hover"><NavLink to='/'>FeedBack</NavLink></li>
                     <li className="link link-hover"><NavLink>Blogs</NavLink></li>
-                    <li className="link link-hover"><NavLink>FeedBack</NavLink></li>
                 </ul>
             </div>
             <div className="flex gap-2">

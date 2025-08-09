@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const AdventureCard = ({ cardInfo }) => {
     const {
         title,
@@ -32,10 +34,12 @@ const AdventureCard = ({ cardInfo }) => {
                     <span className="badge badge-info">{duration}</span>
                     <span className="badge badge-accent">{cost}</span>
                 </div>
-
-                <div className="text-right mt-2">
+                <div className="text-left font-bold mt-2">
                     <span className="text-xs text-gray-500">📍 {location}</span>
                 </div>
+                <NavLink to='/explore'>
+                    <button className="btn btn-primary text-center">Explore More</button>
+                </NavLink>
             </div>
         </div>
     );
