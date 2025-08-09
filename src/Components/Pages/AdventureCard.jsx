@@ -7,6 +7,9 @@ const AdventureCard = ({ cardInfo }) => {
         cost,
         location,
         duration,
+        maxGroupSize,
+        includedItems,
+        specialInstructions
     } = cardInfo;
 
     return (
@@ -21,7 +24,9 @@ const AdventureCard = ({ cardInfo }) => {
             <div className="card-body space-y-2">
                 <h2 className="text-xl font-bold text-gray-800">{title}</h2>
                 <p className="text-gray-600 text-sm">{shortDescription}</p>
-
+                <p className="text-gray-500"><span className="text-cyan-500 font-semibold">Included Items</span> : {includedItems} </p>
+                <p className="text-gray-500"> <span className="text-cyan-500 font-semibold">Max Group Size </span> : {maxGroupSize}</p>
+                <p className="text-gray-500"> <span className="text-cyan-5 font-semibold00">Special Instructions</span> : {specialInstructions}</p>
                 <div className="flex flex-wrap gap-2 mt-3">
                     <span className="badge badge-primary">{category}</span>
                     <span className="badge badge-info">{duration}</span>
