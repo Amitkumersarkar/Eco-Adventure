@@ -18,6 +18,7 @@ import Details from './Components/Pages/Details';
 import CheckOutNow from './Components/Pages/CheckOutNow';
 import ErrorPage from './Components/Pages/ErrorPage';
 import About from './Components/Pages/About';
+import Contact from './Components/Pages/ContactPage';
 
 const router = createBrowserRouter([
   {
@@ -87,6 +88,10 @@ const router = createBrowserRouter([
       {
         path: '/about',
         element: <About></About>
+      },
+      {
+        path:'/contact',
+        element:<Contact></Contact>
       }
 
     ]

@@ -18,9 +18,9 @@ const Navbar = () => {
                 <ul className="flex gap-5 font-semibold">
                     <li><NavLink to='/' className={navLinkStyles}>Home</NavLink></li>
                     <li><NavLink to='/about' className={navLinkStyles}>About</NavLink></li>
-                    <li><NavLink to='/error' className={navLinkStyles}>Blogs</NavLink></li>
                     <li><NavLink to='/explore' className={navLinkStyles}>Explore</NavLink></li>
                     <li><NavLink to='/hotelService' className={navLinkStyles}>Hotel Service</NavLink></li>
+                    <li><NavLink to='/contact' className={navLinkStyles}>Contact Us</NavLink></li>
                 </ul>
             </div>
             <div className="flex gap-2">

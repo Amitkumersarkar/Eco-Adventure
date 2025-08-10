@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -19,8 +20,8 @@ const Footer = () => {
                 <nav>
                     <h6 className="footer-title text-lg font-semibold mb-4">Company</h6>
                     <ul className="space-y-2 text-sm">
-                        <li><a className="hover:text-blue-300 transition-colors duration-200 cursor-pointer">About us</a></li>
-                        <li><a className="hover:text-blue-300 transition-colors duration-200 cursor-pointer">Contact</a></li>
+                        <li> <NavLink to='/about'> <a className="hover:text-blue-300 transition-colors duration-200 cursor-pointer">About us</a></NavLink></li>
+                        <li> <NavLink to='/contact'> <a className="hover:text-blue-300 transition-colors duration-200 cursor-pointer">Contact</a></NavLink></li>
                         <li><a className="hover:text-blue-300 transition-colors duration-200 cursor-pointer">Jobs</a></li>
                         <li><a className="hover:text-blue-300 transition-colors duration-200 cursor-pointer">Press kit</a></li>
                     </ul>
