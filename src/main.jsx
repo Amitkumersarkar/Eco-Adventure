@@ -17,6 +17,7 @@ import HotelServiceCard from './Components/Pages/HotelServiceCard';
 import Details from './Components/Pages/Details';
 import CheckOutNow from './Components/Pages/CheckOutNow';
 import ErrorPage from './Components/Pages/ErrorPage';
+import About from './Components/Pages/About';
 
 const router = createBrowserRouter([
   {
@@ -60,9 +61,8 @@ const router = createBrowserRouter([
         element: <HotelServiceCard></HotelServiceCard>
       },
       {
-        path: '/details',
-        element: <Details></Details>,
         path: '/details/:id',
+        element: <Details></Details>,
         // showing single data using dynamic method
         loader: async ({ params }) => {
           const res = await fetch('/EcoAdventure.json')
@@ -84,6 +84,10 @@ const router = createBrowserRouter([
           return oneData;
         }
       },
+      {
+        path: '/about',
+        element: <About></About>
+      }
 
     ]
   },
