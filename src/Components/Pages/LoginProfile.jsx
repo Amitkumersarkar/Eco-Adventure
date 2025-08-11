@@ -150,7 +150,7 @@ const LoginProfile = () => {
                                 <p className="text-center font-semibold">
                                     Don't have an account?{" "}
                                     <NavLink to="/register">
-                                        <span className="font-bold text-green-600">Register</span>
+                                        <span className="font-bold text-cyan-600">Register</span>
                                     </NavLink>
                                 </p>
                             </fieldset>

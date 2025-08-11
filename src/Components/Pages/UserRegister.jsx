@@ -73,7 +73,7 @@ const UserRegister = () => {
                 <div className="text-center ">
                     <h1 className="text-5xl font-bold">Register Now!</h1>
                 </div>
-                <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div className="card font-semibold bg-gray-400 w-full max-w-sm shrink-0 shadow-2xl">
                     <form onSubmit={handleSubmit} className="card-body">
                         <fieldset className="fieldset space-y-4">
                             <div>
@@ -147,7 +147,7 @@ const UserRegister = () => {
                             <p className="text-center font-semibold mt-4">
                                 Already have an account?{" "}
                                 <NavLink to="/login">
-                                    <span className="font-bold text-cyan-600">Login</span>
+                                    <span className="font-bold text-blue-700">Login</span>
                                 </NavLink>
                             </p>
                         </fieldset>

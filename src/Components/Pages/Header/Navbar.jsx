@@ -5,7 +5,7 @@ const Navbar = () => {
         isActive ? "text-white font-semibold" : "text-gray-400 hover:text-cyan-400";
 
     return (
-        <div className="flex justify-between navbar rounded-xl shadow-sm bg-gradient-to-br from-cyan-400 via-purple-600 to-blue-500 text-white p-2 animate-fade-in-up relative z-50">
+        <div className="flex justify-between navbar shadow-sm bg-gradient-to-br from-cyan-400 via-purple-600 to-blue-500 text-white p-2 animate-fade-in-up relative z-50">
             {/* Logo & Title */}
             <div className="flex justify-between items-center w-[200px] gap-2">
                 <div>
