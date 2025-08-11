@@ -15,19 +15,22 @@ export const authContext = createContext();
 const AuthProvider = ({ routes }) => {
     const googleProvider = new GoogleAuthProvider();
     const [user, setUser] = useState(null);
-
+    const [loading, setLoading] = useState(true);
     // Register
     const handleRegister = (email, password) => {
+        setLoading(true);
         return createUserWithEmailAndPassword(auth, email, password);
     };
 
     // Login
     const handleLogin = (email, password) => {
+        setLoading(true);
         return signInWithEmailAndPassword(auth, email, password);
     };
 
     // Logout
     const handleLogOut = () => {
+        setLoading(true);
         return signOut(auth);
     };
 
@@ -39,6 +42,9 @@ const AuthProvider = ({ routes }) => {
     // Context data
     const authInfo = {
         user,
+        setUser,
+        loading,
+        setLoading,
         handleRegister,
         handleLogin,
         handleLogOut,
@@ -49,6 +55,7 @@ const AuthProvider = ({ routes }) => {
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
             setUser(currentUser);
+            setLoading(false);
         });
         return () => unsubscribe(); // Cleanup
     }, []);
