@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 
 const LoginProfile = () => {
+
     return (
         <div className="bg-base-200 min-h-screen flex items-start pt-10 px-4">
             <div className="flex flex-col items-center w-full max-w-md mx-auto space-y-5">

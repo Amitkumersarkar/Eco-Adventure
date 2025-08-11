@@ -19,6 +19,7 @@ import CheckOutNow from './Components/Pages/CheckOutNow';
 import ErrorPage from './Components/Pages/ErrorPage';
 import About from './Components/Pages/About';
 import Contact from './Components/Pages/ContactPage';
+import AuthProvider from './Components/AuthProvider/AuthProvider';
 
 const router = createBrowserRouter([
   {
@@ -90,8 +91,8 @@ const router = createBrowserRouter([
         element: <About></About>
       },
       {
-        path:'/contact',
-        element:<Contact></Contact>
+        path: '/contact',
+        element: <Contact></Contact>
       }
 
     ]
@@ -99,6 +100,8 @@ const router = createBrowserRouter([
 ]);
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider routes={<RouterProvider router={router} />}>
+
+    </AuthProvider>
   </StrictMode>,
 )
