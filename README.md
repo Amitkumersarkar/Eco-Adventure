@@ -1,12 +1,39 @@
-# React + Vite
+# 🌿 Travelia Eco-adventure Experiences
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An Travelia blog website built with **React**, **Firebase**, and **Tailwind CSS**, showcasing various eco-friendly travel adventures like mountain treks, ocean dives, safaris, and more. Users can browse experiences, view detailed information, and connect with experts for consultation.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Live Demo
+🔗 **Live URL:** [Your Live Website Link Here](https://yourdomain.com)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🎯 Purpose
+This project was developed as part of **Assignment Category 002** to create a responsive, single-page application with authentication, protected routes, and dynamic data rendering.
+
+---
+
+## ✨ Features
+- 🔐 **Authentication** with Email/Password & Google Sign-in (Firebase Auth)
+- 📱 **Responsive Design** for mobile, tablet, and desktop
+- 🖼 **Dynamic Adventure Cards** loaded from JSON data
+- 🔒 **Private Routes** for Adventure Details & My Profile
+- 🗓 **Consultation Feature** based on real-time hours
+- 🎭 **Animations** using AOS / Animate.css
+- 📌 **Dynamic Page Titles** per route
+- 🔄 **Update Profile** functionality with Firebase
+- 🔑 Environment variables for Firebase config
+- 🖼 Real Travel images from Unsplash
+
+---
+
+## 🛠 Technologies Used
+- **React.js**
+- **React Router**
+- **Tailwind CSS** + **DaisyUI**
+- **Firebase Authentication**
+- **AOS / Animate.css**
+- **Unsplash Images**
+
+---
