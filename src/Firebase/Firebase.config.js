@@ -4,12 +4,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCVW2lpTp5t98adxXSj4prbJUdRsqzkmoA",
-  authDomain: "travelia-d8b52.firebaseapp.com",
-  projectId: "travelia-d8b52",
-  storageBucket: "travelia-d8b52.firebasestorage.app",
-  messagingSenderId: "949864764029",
-  appId: "1:949864764029:web:751ec5365a9d23851ed714"
+  apiKey: import.meta.env.VITE_apiKey,
+  authDomain: import.meta.env.VITE_authDomain,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket: import.meta.env.VITE_storageBucket,
+  messagingSenderId: import.meta.env.VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId,
 };
 
 // Initialize Firebase
