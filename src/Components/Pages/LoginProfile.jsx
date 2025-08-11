@@ -88,7 +88,7 @@ const LoginProfile = () => {
 
     // Login form UI remains unchanged
     return (
-        <div className="bg-base-200 min-h-screen flex items-start pt-10 px-4">
+        <div className="bg-base-200 min-h-screen flex items-start mt-10 pt-10 px-4">
             <div className="flex flex-col items-center w-full max-w-md mx-auto space-y-5">
                 {/* Top Text Section */}
                 <div className="text-center">
