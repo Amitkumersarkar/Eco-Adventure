@@ -5,7 +5,7 @@ An Travelia blog website built with **React**, **Firebase**, and **Tailwind CSS*
 ---
 
 ## 📌 Live Demo
-🔗 **Live URL:** [Your Live Website Link Here](https://travelia-d8b52.web.app/)
+🔗 **Live URL:** [https://travelia-d8b52.web.app/]
 
 ---
 
