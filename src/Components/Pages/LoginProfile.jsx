@@ -24,12 +24,12 @@ const LoginProfile = () => {
 
         handleLogin(email, password)
             .then((result) => {
-                console.log("Logged in user:", result.user);
+                // console.log("Logged in user:", result.user);
                 setError("");
                 navigate(from, { replace: true });
             })
             .catch((err) => {
-                console.error(err);
+                // console.error(err);
                 setError(err.message);
             });
     };
@@ -37,12 +37,12 @@ const LoginProfile = () => {
     const handleGoogleSignIn = () => {
         handleLoginWithGoogle()
             .then((result) => {
-                console.log("Google user:", result.user);
+                // console.log("Google user:", result.user);
                 setError("");
                 navigate(from, { replace: true });
             })
             .catch((err) => {
-                console.error(err);
+                // console.error(err);
                 setError(err.message);
             });
     };
@@ -53,7 +53,7 @@ const LoginProfile = () => {
                 navigate("/login");
             })
             .catch((err) => {
-                console.error(err);
+                // console.error(err);
                 setError(err.message);
             });
     };
