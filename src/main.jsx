@@ -20,6 +20,7 @@ import ErrorPage from './Components/Pages/ErrorPage';
 import About from './Components/Pages/About';
 import Contact from './Components/Pages/ContactPage';
 import AuthProvider from './Components/AuthProvider/AuthProvider';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 
 const router = createBrowserRouter([
   {
@@ -46,7 +47,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/explore',
-        element: <Explore></Explore>
+        element: <PrivateRoute><Explore></Explore></PrivateRoute>
       }
       ,
       {
@@ -55,7 +56,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/hotelService',
-        element: <HotelService></HotelService>,
+        element: <PrivateRoute><HotelService></HotelService></PrivateRoute>,
         loader: () => fetch("/service.json")
       },
       {
@@ -64,7 +65,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/details/:id',
-        element: <Details></Details>,
+        element: <PrivateRoute><Details></Details></PrivateRoute>,
         // showing single data using dynamic method
         loader: async ({ params }) => {
           const res = await fetch('/EcoAdventure.json')
